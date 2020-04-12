@@ -1,0 +1,27 @@
+<div class="searcher">
+    <span class="search-bar">
+        <i class="fa fa-search"></i> <input type="text" id="myInput" onkeyup="myFunction()" placeholder="Search for names.." />
+    </span>
+</div>
+
+<table class="plants-table" >
+    <thead>
+        <tr>
+            <th *ngFor="let item of theadElements;" [attr.colspan]="item.colspan" >
+                {{item.name}}
+            </th>
+        </tr>
+        <tr>
+            <th *ngFor="let item of theadValues;">
+                {{item.name}}<i class={{item.icon}}></i>
+            </th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor="let item of tableData;">
+            <td *ngFor="let data of item.values;" class="{{item.color}}" >
+                <span class="data-font" >{{data}}</span>
+            </td>
+        </tr>
+    </tbody>
+</table>

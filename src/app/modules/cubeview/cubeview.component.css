@@ -1,0 +1,55 @@
+
+.cube-wrapper{
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+
+.cube-data{
+    margin: 20px;
+    border: 2px solid black;
+    border-radius: 10px;
+}
+
+.cube-data ul,li{
+    margin: 0;
+    list-style: none;
+    padding:0;
+    text-align: center;
+    font-size: 16px;
+    font-weight: bolder;
+}
+
+.cube-data li{
+    padding: 10px 15px;
+}
+
+.cube-data span{
+    color: #ccc;
+    font-weight: bold;
+}
+
+.total-card{
+    border-color: #055563;
+}
+
+.total-card hr{
+    border: 1px solid #055563;
+}
+
+.error-card{
+    border-color: #ff0000;
+}
+
+.error-card hr{
+    border: 1px solid #ff0000;
+}
+
+.warning-card{
+    border-color: #ffb300;
+}
+
+.warning-card hr{
+    border: 1px solid #ffb300;
+}

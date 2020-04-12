@@ -1,0 +1,5 @@
+<nav class="nav-bar">
+    <ul class="nav-bar-ul">
+        <li *ngFor="let item of menu;" [ngClass]="menuItem" id={{item.id}} ><a (click)="setItemClickedClass(this.item.id)" routerLink={{item.link}}><i class={{item.icon}}></i>{{item.name}}</a></li>
+    </ul>
+</nav>

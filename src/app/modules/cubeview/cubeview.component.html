@@ -1,0 +1,16 @@
+<div class="cube-wrapper">
+    <div *ngFor="let item of cardsData;" class={{item.classes}} >
+        <ul>
+            <li>{{item.name}}
+                <hr>
+                <ul>
+                    <li><span>Incidents:</span> {{item.incidents}}</li>
+                    <li><span>New incidents:</span> {{item.new}}</li>
+                    <hr>
+                    <li><span>Inverters failed:</span> {{item.invertersFailed}}</li>
+                    <li><span>Inverters instant:</span> {{item.invertersInstant}}</li>
+                </ul>
+            </li>
+        </ul>
+    </div>
+</div>

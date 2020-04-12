@@ -1,0 +1,59 @@
+.searcher{
+    width: 30%;
+    margin: 30px 0px;
+    border-top: 1px solid #000; /* Add a grey border */
+    border-bottom: 1px solid #000; /* Add a grey border */
+}
+
+.searcher:focus{
+    background-color: #eee;
+}
+
+.search-bar{
+    display: flex;
+}
+
+.searcher i{
+    font-size: 2.5em;
+    margin: 0 20px 0 20px;
+    padding-top: 10px;
+}
+
+.searcher input {
+    width: 80%;
+    font-size: 16px; /* Increase font-size */
+    padding: 12px 0px 12px 0px; /* Add some padding */
+    border: 0;
+}
+
+.searcher input:focus{
+    outline: none;
+}
+
+.plants-table {
+    margin: 0 auto 40px auto;
+    font-size: 1.5em;
+    border-collapse: collapse; /* Collapse borders */
+    width: 100%; /* Full-width */
+    border: 1px solid #ddd; /* Add a grey border */
+    font-size: 18px; /* Increase font-size */
+}
+
+.plants-table tr {
+    /* Add a bottom border to all table rows */
+    border-bottom: 1px solid #ddd;
+}
+
+.plants-table th, td{
+    /*border-bottom: 1px solid #000;
+    text-align: center;
+    padding: 5px;*/
+    text-align: center; /* Left-align text */
+    padding: 12px; /* Add padding */
+}
+
+.plants-table th, thead .plants-table tr:hover {
+    /* Add a grey background color to the table header and on hover */
+    background-color: #055563;
+    color: #fff;
+}
